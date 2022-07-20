@@ -589,43 +589,7 @@ $.ajax({
 
 });
 
-$.ajax({
 
-	method: "GET",
-	url: "https://dapi.kakao.com/v2/search/image",
-	data: { query: "'Beatbox'(Photobook Ver.)" },
-	headers: {Authorization: "KakaoAK 43458cafd2f4189f4d94e224104c20c2"}
-	
-})
-
-.done(function( nctMain ) {
-	console.log( nctMain );
-
-
-	$(".CD > .contents > .product > ul > .nct > a > .cover").append("<img src='"+nctMain.documents[2].image_url+"'/>");
-
-
-
-});
-
-$.ajax({
-
-	method: "GET",
-	url: "https://dapi.kakao.com/v2/search/image",
-	data: { query: "강다니엘 - 1st Full Album [The Story] 앨범커버" },
-	headers: {Authorization: "KakaoAK 43458cafd2f4189f4d94e224104c20c2"}
-	
-})
-
-.done(function( kangMain ) {
-	console.log( kangMain );
-
-
-	$(".CD > .contents > .product > ul > .kang > a > .cover").append("<img src='"+kangMain.documents[2].image_url+"'/>");
-
-
-
-});	
 
 
 /*DVD*/
